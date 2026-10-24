@@ -16,10 +16,10 @@ Este script permite conectarte a una instancia por SSM, te pregunta por tu perfi
 
 ## add-tmux.sh 
 ### EN
-Install tmux on your terminal (bash), if you use another terminal just change the '.bashrc' value
+Install tmux on your terminal (bash), if you use another terminal just change the '.bashrc' value  
 You only need to run this script once.
 
 ### ES
-Instala tmux en tu terminal (bash). Si utilizas otra terminal, solamente cambia el valor de '.bashrc'.
+Instala tmux en tu terminal (bash). Si utilizas otra terminal, solamente cambia el valor de '.bashrc'.  
 Solamente necesitas ejecutar este script una vez.
 
