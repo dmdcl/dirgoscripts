@@ -3,7 +3,7 @@ set -e
 
 if 'echo if [[ -z "$TMUX" && $- == *i* ]] && command -v tmux &> /dev/null; then
     tmux new-session
-fi'
+fi' >> "$HOME/.bashrc"
 then
     echo 'added tmux in .bashrc'
 
