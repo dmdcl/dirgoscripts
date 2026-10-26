@@ -18,8 +18,8 @@ Este script permite conectarte a una instancia por SSM, te pregunta por tu perfi
 ### EN
 First you need to install tmux on your system:  
 ```bash
-sudo apt install tmux -y
-sudo dnf install tmux -y
+sudo apt install tmux -y # Debian
+sudo dnf install tmux -y # RHEL
 ```  
 
 Then run this script:  
@@ -30,8 +30,8 @@ You only need to run this script once.
 ### ES
 Primero tienes que instalar tmux en tu terminal:  
 ```bash
-sudo apt install tmux -y
-sudo dnf install tmux -y
+sudo apt install tmux -y # Debian
+sudo dnf install tmux -y # RHEL
 ```  
 
 Luego corre este script:  
