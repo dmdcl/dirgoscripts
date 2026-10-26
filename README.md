@@ -16,11 +16,24 @@ Este script permite conectarte a una instancia por SSM, te pregunta por tu perfi
 
 ## add-tmux.sh 
 ### EN
-First you need to install tmux on your system:  
+
+**What it does:**
+-Adds tmux to your '.basrhc', so it starts automatically every time you open a terminal.
+
+First you need to install tmux on your system:
+
 ```bash
 sudo apt install tmux -y # Debian
 sudo dnf install tmux -y # RHEL
-```  
+```
+
+If you are on native Linux (not WSL), copying to the clipboard uses 'xclip' so install it too:
+
+```bash
+sudo apt install xclip -y # Debian
+sudo dnf install xclip -y # RHEL
+```
+Then open the script and replace '"clip.exe"' with '"xclip -selection clipboard"' in the two lines that use it.
 
 Then run this script:  
 
@@ -28,14 +41,29 @@ If you use another shell just change the '.bashrc' value.
 You only need to run this script once.
 
 ### ES
-Primero tienes que instalar tmux en tu terminal:  
+
+**Qué hace:**
+- Agrega tmux a tu `.bashrc`, para que se abra automáticamente cada vez que abres una terminal.
+- Crea un `.tmux.conf` que habilita:
+  - Scroll y selección con el mouse
+  - Copiado al portapapeles al soltar el mouse después de seleccionar texto, o con `v` para seleccionar e `y` para copiar (modo vi)
+
+Primero tienes que instalar tmux en tu terminal:
+
 ```bash
 sudo apt install tmux -y # Debian
 sudo dnf install tmux -y # RHEL
-```  
+```
 
-Luego corre este script:  
+Si usas Linux nativo (no WSL), el copiado al portapapeles usa `xclip`, así que instálalo también:
 
-Si utilizas otro shell, solamente cambia el valor de '.bashrc'.  
+```bash
+sudo apt install xclip -y # Debian
+sudo dnf install xclip -y # RHEL
+```
+
+Luego abre el script y reemplaza `"clip.exe"` por `"xclip -selection clipboard"` en las dos líneas donde aparece.
+
+Luego corre este script.
+Si utilizas otro shell, solamente cambia el valor de `.bashrc`.
 Solamente necesitas ejecutar este script una vez.
-
