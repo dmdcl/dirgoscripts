@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if 'echo if [[ -z "$TMUX" && $- == *i* ]] && command -v tmux &> /dev/null; then
+if echo 'if [[ -z "$TMUX" && $- == *i* ]] && command -v tmux &> /dev/null; then
     tmux new-session
 fi' >> "$HOME/.bashrc"
 then
