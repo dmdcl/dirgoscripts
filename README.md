@@ -18,7 +18,10 @@ Este script permite conectarte a una instancia por SSM, te pregunta por tu perfi
 ### EN
 
 **What it does:**
--Adds tmux to your '.basrhc', so it starts automatically every time you open a terminal.
+- Adds tmux to your '.bashrc', so it starts automatically every time you open a terminal.
+- Creates '.tmux.conf' that enables:
+    - Mouse scrolling and selection
+    - Copy to the clipboard when you release the mouse after selecting
 
 First you need to install tmux on your system:
 
@@ -44,9 +47,9 @@ You only need to run this script once.
 
 **Qué hace:**
 - Agrega tmux a tu `.bashrc`, para que se abra automáticamente cada vez que abres una terminal.
-- Crea un `.tmux.conf` que habilita:
+- Crea `.tmux.conf` que habilita:
   - Scroll y selección con el mouse
-  - Copiado al portapapeles al soltar el mouse después de seleccionar texto, o con `v` para seleccionar e `y` para copiar (modo vi)
+  - Copiado al portapapeles al soltar el mouse después de seleccionar texto.
 
 Primero tienes que instalar tmux en tu terminal:
 
